@@ -1,0 +1,120 @@
+.works {
+  margin: 41px;
+  &__title {
+    text-transform: uppercase;
+    font-size: 45px;
+    color: $black;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    margin-bottom: 28px;
+    &-col {
+      flex-basis: 33.3333%;
+      padding: 15px;
+    }
+    .portfolio__item {
+      text-transform: uppercase;
+      box-shadow: 0 0 4px rgba(#000, 0.2);
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+
+      &:hover {
+        .overlay {
+          opacity: 1;
+        }
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+
+        &__link {
+          padding: 15px;
+          text-decoration: none;
+          font-size: 50px;
+          color: white;
+          transition: color 0.2s linear;
+          &:hover {
+            color: grey;
+          }
+        }
+        .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+      }
+      &-img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      &-content {
+        padding: 15px 12px;
+        &--cat {
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        &--title {
+          font-weight: bold;
+          font-size: 16px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  .btn-small {
+    font-size: 14px;
+    border-width: 2px;
+    font-weight: bold;
+    padding: 11px 13px;
+  }
+}
+@media (max-width: $mobile) {
+  .works__portfolio .portfolio__item .overlay__link {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    transition: color 0.2s linear;
+  }
+  .works__portfolio-col {
+    flex-basis: 50%;
+    padding: 15px;
+  }
+}
+@media (max-width: $mobile-sm) {
+  .work {
+    max-width: 370px;
+  }
+  .works__portfolio-col {
+    flex-basis: 100%;
+  }
+}

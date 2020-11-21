@@ -1,0 +1,6 @@
+.skills {
+  margin-bottom: 35px; }
+  .skills__item {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end; }

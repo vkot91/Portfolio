@@ -1,0 +1,14 @@
+@import "./variables/variables";
+@import "./base.scss";
+
+@import "./blocks/header/header.scss";
+@import "./blocks/about/about.scss";
+@import "./blocks/intro/intro.scss";
+@import "./blocks/works/works.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/modal/modal.scss";
+@import "./blocks/modal-works/modal-works.scss";
+@import "./blocks/modal-resume/modal-resume.scss";
+@import "./blocks/modal-resume/timeline";
+@import "./blocks/modal-resume/skills";
+@import "./blocks/modal-contact/modal-contact";

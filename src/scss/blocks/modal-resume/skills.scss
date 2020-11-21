@@ -1,0 +1,17 @@
+.skills {
+  margin-bottom: 35px;
+
+  &__item {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: $mobile-sm) {
+  .skills {
+    &__item {
+      font-size: 10px;
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Surf shop",
+    "img": "../img/img-min/surf.jpg",
+    "alt": "Surf",
+    "category": "Gulp/Scss",
+    "year": 2020,
+    "gitLink": "https://github.com/vkot91/Surf",
+    "link": "https://surfstore.netlify.app/",
+    "text": "Responvise landing page. In this project i learned gulp, webpack and scss. I had template in Figma.",
+    "sliderImg": ["../img/surf/1.jpg", "../img/surf/2.jpg", "../img/surf/3.jpg"]
+  },
+  {
+    "id": 2,
+    "title": "React todo",
+    "img": "../img/img-min/todo.jpg",
+    "alt": "todo",
+    "category": "React/Json-Server/React-router",
+    "gitLink": "https://github.com/vkot91/React-Super-Todo",
+
+    "year": 2020,
+    "text": "My first project on ReactJs. I used json-server (fake-server) api for backend. You can create categories of tasks and tasks. Ofcourse you can delete or edit task. For routing i used react-router",
+    "link": "https://todo-vkot.herokuapp.com/",
+    "sliderImg": [
+      "../img/todo/1.jpg",
+      "../img/todo/2.jpg",
+      "../img/todo/3.jpg"
+    ]
+  },
+  
+  {
+    "id": 3,
+    "title": "ComfyHouse",
+    "img": "../img/img-min/comfy.jpg",
+    "alt": "comfy",
+    "category": "JavaScript",
+    "year": 2020,
+    "gitLink": "https://github.com/vkot91/JsComfyHouseShop",
+    "text": "Simple Javascipt online shop with contentful database.",
+    "link": "https://surfstore.netlify.app/",
+    "sliderImg": [
+      "../img/comfyhouse/1.jpg",
+      "../img/comfyhouse/2.jpg",
+      "../img/comfyhouse/3.jpg"
+    ]
+  },
+  
+  {
+    "id": 4,
+    "title": "Pizza Shop",
+    "img": "../img/img-min/pizza.jpg",
+    "alt": "Surf",
+    "category": "React/Redux/Json-server",
+    "year": 2020,
+    
+    "gitLink": "https://github.com/vkot91/pizza-react",
+    "link": "https://vkot-react-pizza.herokuapp.com/",
+    "text": "Project on ReactJs. I used json-server (fake-server) api for backend. Also i used redux to save state.",
+
+    "sliderImg": [
+      "../img/pizza/1.jpg",
+      "../img/pizza/2.jpg",
+      "../img/pizza/3.jpg"
+    ]
+  }
+  ,
+  {
+    "id": 5,
+    "title": "Password Wallet",
+    "img": "../img/img-min/wallet.jpg",
+    "alt": "Surf",
+    "category": "NodeJs/MySql/Exspress",
+    "year": 2020,
+    "gitLink": "https://github.com/vkot91/Password-Walet",
+    "text": "This project i create to keep my all paswords in one place and use hash functions. User can choose type of password hash ( hmac or sha-512 ) when user create account. In wallet user create password and it's saved in MySql database",
+    "sliderImg": [
+      "../img/password-wallet/1.jpg",
+      "../img/password-wallet/2.jpg",
+   
+      "../img/password-wallet/3.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Portfolio",
+    "img": "../img/img-min/portfolio.jpg",
+    "alt": "Surf",
+    "category": "Gulp/Scss",
+    "year": 2020,
+    "text":"My portfolio",
+    "gitLink": "https://github.com/vkot91/Portfolio",
+    "link": "https://vkotportfolio.netlify.app/",
+    "sliderImg": [
+      "../img/portfolio/1.jpg",
+      "../img/portfolio/2.jpg",
+      "../img/portfolio/3.jpg"
+    ]
+  }
+
+]

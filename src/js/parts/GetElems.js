@@ -5,6 +5,7 @@ export default class GetElems {
       .catch((error) => {
         console.log(error);
       });
+
     return result;
   }
 }

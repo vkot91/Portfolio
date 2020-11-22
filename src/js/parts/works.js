@@ -1,10 +1,17 @@
 import GetElems from "./GetElems";
+
 const works = () => {
   const portfolio = document.querySelector(".works__portfolio");
   const getElements = new GetElems();
-
+  const spinner = document.getElementById("spinner");
+  console.log(spinner);
   //Get items from db
-  getElements.getItems().then((data) => renderCards(data));
+
+  spinner.removeAttribute("hidden");
+  getElements.getItems(spinner).then((data) => {
+    renderCards(data);
+    spinner.setAttribute("hidden", "");
+  });
 
   const createElements = (
     id,
@@ -56,6 +63,9 @@ const works = () => {
   };
 
   const renderCards = (items) => {
+    if (!items) {
+      console.log("hello world!!");
+    }
     items.forEach((item) => {
       const { id, category, title, year, gitLink, link, img, alt } = item;
       createElements(id, category, title, year, gitLink, link, img, alt);

@@ -430,9 +430,15 @@ __webpack_require__.r(__webpack_exports__);
 
 const works = () => {
   const portfolio = document.querySelector(".works__portfolio");
-  const getElements = new _GetElems__WEBPACK_IMPORTED_MODULE_0__["default"](); //Get items from db
+  const getElements = new _GetElems__WEBPACK_IMPORTED_MODULE_0__["default"]();
+  const spinner = document.getElementById("spinner");
+  console.log(spinner); //Get items from db
 
-  getElements.getItems().then(data => renderCards(data));
+  spinner.removeAttribute("hidden");
+  getElements.getItems(spinner).then(data => {
+    renderCards(data);
+    spinner.setAttribute("hidden", "");
+  });
 
   const createElements = (id, category, title, year, gitLink, link, img, alt) => {
     const div = document.createElement("div");
@@ -465,6 +471,10 @@ const works = () => {
   };
 
   const renderCards = items => {
+    if (!items) {
+      console.log("hello world!!");
+    }
+
     items.forEach(item => {
       const {
         id,
